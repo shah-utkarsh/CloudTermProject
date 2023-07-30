@@ -13,8 +13,8 @@ const AddBook = () => {
         e.preventDefault();
 
         try {
-            // const response = await axios.post(process.env.REACT_APP_API_ENDPOINT, {
-            const response = await axios.post("https://ll7ov8v2zk.execute-api.us-east-1.amazonaws.com/add-book/", {
+            const response = await axios.post(process.env.REACT_APP_API_ENDPOINT, {
+                // const response = await axios.post("https://ll7ov8v2zk.execute-api.us-east-1.amazonaws.com/add-book/", {
                 book_name: bookName,
                 author: authorName,
                 year: year,
